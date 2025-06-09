@@ -16,7 +16,7 @@ timezone:
 
 title: Assyiekril Fikryan Sarda # the main title
 
-tagline: My Personal Blog # it will display as the subtitle
+tagline: Sistem Informasi | Universitas Hasanuddin # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   blog, personal, life, story, experience, thoughts, ideas, inspiration, motivation, encouragement, support,
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: As'syiekril Fikryan Sarda
-  email: example@domain.com # change to your email address
+  email: arilsarda16@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
