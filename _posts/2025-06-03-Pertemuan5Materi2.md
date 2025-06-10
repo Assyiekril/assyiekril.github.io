@@ -50,29 +50,25 @@ Setelah semua simpul diuji, lintasan terpendek dari A ke F adalah :
 
 Lintasan Terpendek adalah **ABEF/ABDF** dengan total jarak = **4**.
 
-## 4. Implementasi Kode
-
-(Bagian ini tidak tersedia dalam PPT yang diberikan.)
-
-## 5. Contoh Penggunaan Dijkstra's Algorithm
+## 4. Contoh Penggunaan Dijkstra's Algorithm
 
 Dijkstra's Algorithm memiliki aplikasi luas di dunia nyata:
 * **Navigasi Jalan :** Misalnya kita ingin mencari rute terpendek dari rumah ke sekolah. Dijkstra's Algorithm akan membantu kita menentukan jalan mana yang lebih pendek dengan mempertimbangkan semua jalan yang ada dan menghitung jarak yang terpendek dari rumah ke sekolah.
 * **Pengiriman Barang :** Sebuah perusahaan ekspedisi ingin mengirim paket dari gudang ke beberapa pelanggan. Dijkstra's Algorithm akan membantu menentukan rute pengiriman yang paling efisien agar paket bisa sampai lebih cepat dan tidak boros bensin atau tenaga.
 
-## 6. Kelebihan Dijkstra's Algorithm
+## 5. Kelebihan Dijkstra's Algorithm
 
 * **Menjamin Jalur Terpendek :** Dijkstra selalu menemukan solusi yang optimal (jalur terpendek) dari titik asal ke semua titik lain, selama semua bobot *edge* (jarak/biaya) bernilai positif.
 * **Efisien untuk Banyak Aplikasi :** Sangat cocok untuk graf yang padat dan sering digunakan dalam aplikasi nyata seperti GPS, *routing* jaringan, dan sistem navigasi.
 * **Dapat Menyelesaikan Banyak Tujuan Sekaligus :** Sekali dijalankan dari satu titik, bisa memberikan informasi jarak terpendek ke semua titik lainnya dalam graf.
 
-## 7. Kekurangan Dijkstra's Algorithm
+## 6. Kekurangan Dijkstra's Algorithm
 
 * **Tidak Bekerja dengan Bobot Negatif :** Tidak bisa digunakan jika ada *edge* dengan bobot negatif.
 * **Kurang Efisien untuk Graf Besar yang Jarang Terhubung :** Pada graf yang sangat besar dan *sparse* (jarang terhubung), Dijkstra bisa menjadi lambat jika tidak dioptimalkan dengan struktur data seperti *priority queue* (misalnya *heap*).
 * **Perhitungan Bisa Terlalu Luas :** Jika kita hanya ingin jalur dari titik A ke titik B, Dijkstra tetap menghitung semua kemungkinan ke titik lain, yang kadang tidak efisien. Dalam kasus seperti ini, algoritma A\* (A Star) bisa lebih baik karena memperhitungkan arah tujuan.
 
-## 8. Kesimpulan
+## 7. Kesimpulan
 
 Algoritma Dijkstra merupakan salah satu algoritma pencarian jalur terpendek yang paling efisien dan banyak digunakan dalam teori graf. Algoritma ini bekerja dengan cara mencari jalur terpendek dari satu simpul sumber ke semua simpul lainnya dalam graf berbobot non-negatif. Melalui pendekatan *greedy*, Dijkstra memastikan bahwa setiap langkahnya mendekatkan solusi menuju hasil optimal. Keunggulan utama algoritma ini terletak pada keakuratannya dan efisiensinya, terutama jika dikombinasikan dengan struktur data seperti *priority queue* atau *min-heap*. Dalam implementasi praktis, algoritma Dijkstra sangat berguna dalam berbagai bidang seperti jaringan komputer, sistem navigasi, dan pemodelan transportasi.
 
